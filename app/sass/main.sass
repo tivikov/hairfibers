@@ -38,6 +38,144 @@ body
 b, strong
 	font-weight: bold
 
+header
+	position: relative
+	background-color: #303030
+	color: #ffffff
+	.header-wrap
+		height: 63px
+		display: flex
+		justify-content: space-between
+		align-items: center
+	.header-menu
+		ul
+			margin: 0
+			padding: 0
+			li
+				padding: 0
+				margin: 0
+				display: inline-block
+				margin-left: -4px
+				a
+					text-transform: uppercase
+					color: #ffffff
+					padding: 0 15px
+	.submenu
+		
+		background-color: #333333
+		margin: 0
+		cursor: default
+		padding: 0
+		position: absolute
+		top: 63px
+		display: none
+		justify-content: center
+		align-items: center
+		left: 0
+		width: 100%
+		&.active
+			display: flex
+		li
+			list-style-type: none
+			margin-left: -4px
+			margin: 0
+			padding: 0
+			&:not(:last-child)
+				border-right: 1px solid #434343
+			a
+				display: block
+				padding: 10px
+				font-size: 16px
+				margin: 0 15px
+				color: #ffffff
+	.header-category
+		cursor: pointer
+	.header-search
+		input
+			border-color: #fff
+			color: #ffffff
+			width: 300px
+			&::placeholder
+				color: rgba(#fff,0.65)
+				font-style: italic
+
+.inline-form
+	position: relative
+	input
+		height: 35px
+		border-radius: 20px
+		padding-left: 20px
+		font-size: 14px
+		border-width: 2px
+		border-style: solid
+		background-color: transparent
+	.button
+		position: absolute
+		top: 0
+		right: 0
+		height: 35px
+		line-height: 35px
+
+.button
+	cursor: pointer
+	font-size: 14px
+	text-transform: uppercase
+	padding: 0 20px
+	display: inline-block
+	font-weight: bold
+	color: #ffffff
+	background-color: $accent
+	border: none
+	border-radius: 20px
+
+.first-screen
+	display: flex
+	flex-direction: column
+	justify-content: center 
+	align-items: center
+	color: #ffffff
+	width: 100%
+	height: 421px
+	background-size: cover
+	background-position: center 30%
+	background-repeat: no-repeat
+	h1
+		font-size: 32px
+		line-height: 39px
+	.site-description
+		font-size: 20px
+		line-height: 24px
+	.inline-form
+		width: 450px
+		max-width: 90%
+		input
+			color: $text
+			background-color: #ffffff
+			border-color: #fff
+			width: 90%
+
+main
+	padding-top: 33px
+
+section.s-default
+	.section-icon
+		height: 64px
+		width: 64px
+		display: block
+		background-position: center
+		background-repeat: no-repeat
+		background-size: contain
+		margin: 0 auto
+	.section-title
+		font-size: 20px
+		line-height: 24px
+		text-align: center
+		margin-top: 5px
+	hr
+		color: $accent
+		background-color: $accent
+		border: none
+		height: 1px
 
 
 @import "media" // Always at the end

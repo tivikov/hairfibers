@@ -56,12 +56,17 @@ header
 				margin: 0
 				display: inline-block
 				margin-left: -4px
+				&.accent
+					a
+						color: $accent
 				a
+					font-weight: bold
 					text-transform: uppercase
 					color: #ffffff
 					padding: 0 15px
 	.submenu
-		
+		font-family: "OpenSans", sans-serif
+		font-weight: 200
 		background-color: #333333
 		margin: 0
 		cursor: default
@@ -90,6 +95,7 @@ header
 				color: #ffffff
 	.header-category
 		cursor: pointer
+		font-weight: bold
 	.header-search
 		input
 			border-color: #fff
@@ -170,6 +176,7 @@ section.s-default
 		font-size: 20px
 		line-height: 24px
 		text-align: center
+		font-weight: 200
 		margin-top: 5px
 	hr
 		color: $accent

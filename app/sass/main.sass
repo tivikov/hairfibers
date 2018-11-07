@@ -128,11 +128,23 @@ header
 	text-transform: uppercase
 	padding: 0 20px
 	display: inline-block
+	text-align: center
 	font-weight: bold
+	text-decoration: none
 	color: #ffffff
 	background-color: $accent
 	border: none
 	border-radius: 20px
+	&:hover, &:focus
+		color: #ffffff
+		text-decoration: none
+
+.button-inverse
+	background-color: #ffffff
+	border: 2px solid $accent
+	color: $accent
+	&:focus, &:hover
+		color: $accent
 
 .first-screen
 	display: flex
@@ -225,7 +237,7 @@ section.s-default
 				font-family: "Font Awesome 5 Free"
 				font-weight: bold
 				font-size: 12px
-				color: $red
+				color: $accent
 				margin-right: 10px
 				margin-left: 10px
 
@@ -282,7 +294,7 @@ section.s-default
 			font-weight: 200
 			color: #868686
 		.date
-			color: $red
+			color: $accent
 			font-size: 14px
 			font-weight: 500
 			margin-top: 14px
@@ -304,7 +316,37 @@ section.s-default
 		align-items: flex-end
 		text-decoration: none !important
 		
-	
+.s-blog
+	margin-top: 36px
 
+.blog-see-more 
+	.corner-button
+		margin: 0 auto
+		margin-top: 38px
+.corner-button
+	width: 240px
+	height: 35px
+	line-height: 35px
+	text-align: center
+	background-color: $accent
+	color: #ffffff
+	border-radius: 5px
+	font-weight: bold
+	font-size: 14px
+	display: block
+	&:hover, &:focus
+		text-decoration: none
+		color: #ffffff
+
+.blog-buttons
+	text-align: center
+	margin-top: 20px
+	a
+		margin: 10px $gutter/2
+		text-transform: none
+		height: 35px
+		line-height: 35px
+		width: 240px
+		font-size: 14px
 
 @import "media" // Always at the end

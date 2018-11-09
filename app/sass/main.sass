@@ -380,6 +380,7 @@ section.s-default
 			line-height: 17px
 			margin-top: 7px
 			font-weight: 200
+			margin-bottom: 0
 			color: #868686
 		.date
 			color: $accent
@@ -476,10 +477,8 @@ section.s-default
 			a
 				font-family: Roboto, sans-serif
 				color: #ffffff
-				text-decoration: none
 				&:hover, &:focus
 					color: #ffffff
-					text-decoration: none
 
 .choosed-filters
 	margin-top: 20px
@@ -597,6 +596,34 @@ section.s-default
 	&:hover, &:focus
 		text-decoration: none
 		color: #ffffff
+
+.search-template-title
+	text-align: center
+	font-size: 26px
+	font-weight: 200
+
+.buying-guide
+	position: absolute
+	z-index: 3
+	top: 20px
+	left: 20px
+	padding: 2px 25px
+	border-radius: 20px
+	font-size: 14px
+	text-transform: uppercase
+	color: #ffffff
+	font-family: OpenSans, sans-serif
+	background-color: #ed8884
+
+.read-more
+	text-align: right
+	a
+		color: $accent
+		.fas
+			margin-left: 10px
+
+.s-search-template-loop
+	margin-bottom: 50px
 		
 
 @import "media" // Always at the end

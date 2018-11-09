@@ -19,7 +19,15 @@
             display: none
         .humb
             display: block
-        
+    .archive-product
+        &-loop
+            &-item
+                &-rating
+                    display: block
+                &-buttons
+                    > *
+                        margin-top: 10px
+                        width: 100%
 
 // ≥768px
 +media-breakpoint-down(sm)
@@ -37,6 +45,16 @@
         .header-search
             display: none
 
+    .archive-product
+        &-loop
+            &-item
+                display: block
+                text-align: center
+                &-info
+                    text-align: left
+                &-image
+                    width: 168px
+                    display: inline-block
     .footer
         text-align: center
         &-nav

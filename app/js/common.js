@@ -22,4 +22,8 @@ $(function() {
 			div.hide(); // скрываем его
 		}
 	});
+
+	$('.product-filter-block li').click(function(){
+		$(this).toggleClass('selected');
+	})
 });

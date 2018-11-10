@@ -26,4 +26,13 @@ $(function() {
 	$('.product-filter-block li').click(function(){
 		$(this).toggleClass('selected');
 	})
+	function changePreview() {
+		if($(window).width() < 576) {
+			return;
+		}
+		var previewHeight = $('.preview-text').outerHeight();
+		$('.preview-text').css('margin-top', '-' + previewHeight + 'px');
+	}
+	changePreview();
+	$(window).resize(changePreview)
 });

@@ -624,6 +624,85 @@ section.s-default
 
 .s-search-template-loop
 	margin-bottom: 50px
+
+
+.blog-post
+	margin-top: 60px
+	&-content
+		h1
+			color: #272727
+			font-size: 36px
+			font-weight: 500
+			line-height: 1.35
+	&-holder
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 15px 0
+
+		a
+			font-weight: 600
+			font-family: OpenSans
+	&-author
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		.image-author
+			display: flex
+			justify-content: center
+			align-items: center
+			height: 47px
+			width: 47px
+			margin-right: 15px
+			border-radius: 10em
+			overflow: hidden
+			img
+				transform: scale(1.8)
+				display: block
+				width: 100%
+				height: auto
+	&-likes
+		color: $accent
+		font-size: 38px
+	&-title
+		
+		font-weight: bold
+		font-size: 26px
+	.preview-text
+		position: relative
+		color: #ffffff
+		background-image: linear-gradient(90deg,#ED2A23 0%, #ED2A23 50%, rgba(237, 42, 35, 0) 100%)
+		padding: 27px
+		line-height: 1.35
+		font-family: OpenSans,sans-serif
+	&-desc
+		font-size: 18px
+	&-text
+		font-family: OpenSans, sans-serif
+		margin-top: 25px
+		.paragraph
+			font-size: 22px
+			font-weight: bold
+			color: #383838
+			text-align: center
+		p
+			font-size: 16px
+			color: $bg
+			margin: 1rem 0
+		.attach-image
+			max-width: 100%
+			height: auto
+			display: block
+			margin: 25px auto
+
+.posted-in
+	font-size: 14px
+	font-weight: 200
+
+a
+	color: $accent
+	&:hover, &:focus
+		color: $accent
 		
 
 @import "media" // Always at the end

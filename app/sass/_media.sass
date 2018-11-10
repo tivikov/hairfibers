@@ -31,6 +31,8 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+    .blog-post
+	    margin-top: 20px
     header   
         .header-category
             display: none
@@ -41,6 +43,16 @@
 
 // ≥576px
 +media-breakpoint-down(xs)
+    .blog-post
+        &-content
+            h1
+                font-size: 26px
+        &-title
+            font-size: 20px
+        .preview-text
+            padding: 15px
+            background-image: none
+            background-color: $accent
     header   
         .header-search
             display: none

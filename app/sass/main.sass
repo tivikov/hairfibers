@@ -703,6 +703,110 @@ a
 	color: $accent
 	&:hover, &:focus
 		color: $accent
+
+.default-sidebar
+	hr
+		height: 0
+		border-bottom: 1px solid $accent
+	.sidebar-widget
+		margin-bottom: 21px
+	.sidebar-widget-title
+		font-size: 16px
+		color: #ffffff
+		font-weight: 500
+		padding: 15px 0
+		text-align: center
+		background-color: $bg
+		border-radius: 8px 8px 0 0
+		h6
+			margin-bottom: 0
+			font-weight: 500
+			font-size: 16px
+	.sidebar-resent-post
+		font-size: 14px
+		&-item
+			&-info
+				margin: 17px 0
+				display: flex
+				align-items: center
+			&-image
+				border-radius: 8px
+				overflow: hidden
+				flex-basis: 200px
+			&-title
+				margin-left: 16px
+				a
+					font-family: OpenSans, sans-serif
+					font-weight: 600
+					color: #000000
+	.sidebar-posted-in
+		display: flex
+		justify-content: space-between
+		align-items: center
+		>*
+			font-size: 14px
+			font-family: OpenSans, sans-serif
+			font-weight: 200
+			a
+				font-weight: 600
+
+.most-read
+	&-excerpt
+		font-size: 14px
+		color: #595959
+		font-family: OpenSans, sans-serif
+		p
+			margin: 6px 0
+
+.sign-up-widget
+	.sign-up-icon
+		margin-top: 22px
+		text-align: center
+		svg
+			display: inline-block
+	.sign-up-text
+		text-align: center
+		font-size: 14px
+		font-family: OpenSans, sans-serif
+		width: 150px
+		margin: 20px auto
+		color: #595959
+	.sign-up-form
+		input, button
+			width: 100%
+			text-align: center
+			font-family: OpenSans, sans-serif
+			display: block
+			margin-top: 10px
+			border-radius: 8px
+			padding: 4px 0
+		input
+			border: 1px solid $text
+			color: $text
+			&::placeholder
+				color: #595959
+	.sign-up-button
+		cursor: pointer
+		font-weight: bold
+		color: #ffffff
+		border: none
+		background-color: $accent
+
+.categories-widget
+	&-item
+		a
+			padding: 17px 0
+			text-align: center
+			display: block
+			color: $text
+			font-weight: 500
 		
+.holder-date_view-post
+	display: flex
+	justify-content: space-between
+	color: $accent
+	font-size: 14px
+	font-family: OpenSans, sans-serif
+	font-weight: bold
 
 @import "media" // Always at the end

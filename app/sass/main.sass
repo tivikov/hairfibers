@@ -916,9 +916,75 @@ a
 
 .pros-cons
 	margin-top: 30px
+	font-family: OpenSans, sans-serif
 	text-align: center
 	h3
 		font-size: 20px
+
+.pros-cons-container
+	margin-top: 30px
+	display: flex
+	justify-content: center
+	align-items: stretch
+	.option-title
+		border-radius: 10px 10px 0 0
+		text-align: center
+		color: #ffffff
+		padding: 20px 0
+	.pros
+		.option-title
+			background-color: #256DE3
+		ul
+			border-color: #256DE3
+		.fas
+			color: #256de3
+	.cons
+		.option-title
+			background-color: $accent
+		ul
+			border-color: $accent
+		.fas
+			color: $accent
+	.pros, .cons
+		width: 285px
+		margin: 0 32px
+		text-align: left
+		.fas
+			margin-right: 10px
+		ul
+			margin: 0
+			padding: 0
+			padding: 15px 25px 25px
+			border-style: solid
+			border: 
+				left-width: 1px
+				right-width: 1px
+				bottom-width: 1px
+			border-radius: 0 0 10px 10px
+			li
+				list-style-type: none
+				margin: 0
+				margin: 10px 0
+				padding: 0
+		
+.outsoles
+	margin-top: 30px
+	font-family: OpenSans, sans-serif
+	.outsole
+		margin-top: 30px
+		display: flex
+		align-items: flex-start
+		&-content
+			margin-left: 30px
+		&-title
+			color: #565656
+			font-size: 18px
+			font-weight: bold
+			margin-bottom: 6px
+			text-transform: uppercase
+		p
+			font-size: 14px
+			color: #565656
 
 .product-review-rating
 	font-family: OpenSans, sans-serif
@@ -957,5 +1023,49 @@ a
 		margin-top: 8px
 		&-mark
 			text-decoration: underline
+
+.related-reviews
+	margin-top: 30px
+	margin-bottom: 30px
+	text-align: center
+	position: relative
+	overflow: hidden
+	&-title
+		font-size: 22px
+		color: #292929
+		font-weight: normal
+		text-align: center
+		overflow: hidden
+		span
+			padding: 0 15px
+			position: relative
+			display: inline-block
+			&:before, &:after
+				content: ""
+				width: 300%
+				border-top: 1px solid $accent
+				position: absolute
+				right: 100%
+				top: 50%
+			&:after
+				left: 100%
+	&-item
+		margin-top: 15px
+		&-title
+			a
+				&:hover
+					text-decoration: none
+					h5
+						color: $accent
+						text-decoration: none
+			h5
+				font-size: 18px
+				color: #000000
+				font-weight: normal
+		&-stars
+			.fas
+				color: $accent
+
+
 
 @import "media" // Always at the end

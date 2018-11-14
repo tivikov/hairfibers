@@ -1066,6 +1066,142 @@ a
 			.fas
 				color: $accent
 
+.where-to-buy
+	text-align: center
+	&-discount
+		font-weight: 700
+		font-size: 14px
+		padding: 20px 0
+		border-bottom: 1px solid rgba(48, 48, 48, 0.3)
+	&-amazon-content
+		font-family: OpenSans, sans-serif
+		padding: 20px 0
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.button-amazon
+			font-size: 14px
+			border-radius: 20px
+			font-weight: normal
+			padding: 
+				left: 15px
+				right: 15px
+
+.contact-title
+	text-align: center
+	h1
+		font-weight: normal
+		font-size: 28px
+	.short-about-section
+		font-size: 18px
+		font-family: OpenSans, sans-serif
+
+.contact-form
+	margin-top: 30px
+	&-item
+		display: block
+		width: 100%
+		font-size: 18px
+		font-style: italic
+		height: 45px
+		border: 2px solid #303030
+		border-radius: 20px
+		margin: 30px 0
+	textarea
+		font-size: 18px
+		font-style: italic
+		border: 2px solid #303030
+		border-radius: 20px
+		height: 150px
+		display: block
+		width: 100%
+		resize: none
+	&-item, textarea
+		padding: 10px 20px
+		&::placeholder
+			color: rgba(97, 97, 97, 0.65)
+	.button
+		margin-top: 30px
+		min-width: 180px
+		border-radius: 20px
+		padding: 10px 0
+		text-align: center
+		font-weight: bold
+		font-size: 18px
+
+.s-join
+	.join-text
+		margin-top: 40px
+		font-size: 16px
+		font-family: OpenSans, sans-serif
+		text-align: center
+		color: #757575
+
+.inputfile
+	opacity: 0
+	position: absolute
+	z-index: -1
+	& + label
+		cursor: pointer
+
+.attach-file-text
+	display: block
+	font-style: italic
+	color: rgba(97, 97, 97, 0.65)
+	margin-bottom: 20px
+
+.s-advantages
+	.advantage
+		font-weight: 200
+		text-align: center
+		&-number
+			line-height: 1.22
+			font-size: 50px
+		&-text
+			font-family: OpenSans, sans-serif
+			font-size: 22px
+			line-height: 1.36
+	
+.s-team
+	margin: 30px 0
+	.team-content
+		font-family: OpenSans, sans-serif
+		font-size: 16px
+		color: #000000
+		margin-top: 30px
+
+.s-team-people
+	margin-top: 50px
+	.team-people
+		margin-top: 50px
+.team-person
+	margin-top: 30px
+	font-family: OpenSans, sans-serif
+	text-align: center
+	&-image
+		height: 148px
+		width: 148px
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: 0 auto
+		border-radius: 10em
+		overflow: hidden
+		img
+			width: 100%
+			height: auto
+			display: block
+	&-prof
+		color: #888888
+		text-transform: uppercase
+		padding: 10px 0 0 0
+		font-size: 26px
+	&-name
+		font-size: 26px
+		font-weight: 600
+	&-bio
+		color: #4f4f4f
+
 
 
 @import "media" // Always at the end

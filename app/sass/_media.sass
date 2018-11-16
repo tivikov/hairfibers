@@ -47,9 +47,14 @@
         .thumbnail-wrap
             float: left
             margin-right: 10px
+        &-main-image
+            width: 100%
         &-images-wrap
             flex-direction: column
             flex-basis: 100%
+        .product-review-thumbnails
+            float: none
+            width: 100%
     .users-rating
         margin-top: 10px
     .blog-post
@@ -77,12 +82,19 @@
     header   
         .header-search
             display: none
+    .grade
+        font-size: 20px
+        line-height: 1.1
 
     .archive-product
         &-loop
             &-item
                 display: block
                 text-align: center
+                &-grade
+                    position: absolute
+                    top: 0
+                    right: 0
                 &-info
                     text-align: left
                 &-image

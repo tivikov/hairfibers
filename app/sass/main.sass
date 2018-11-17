@@ -439,6 +439,9 @@ section.s-default
 		margin-top: 38px
 .corner-button
 	width: 240px
+	margin: 0 auto
+	border: none
+	cursor: pointer
 	height: 35px
 	line-height: 35px
 	text-align: center
@@ -829,6 +832,11 @@ a
 			display: block
 			color: $text
 			font-weight: 500
+			transition: background-color 0.25s ease, color 0.25s ease
+			&:hover
+				text-decoration: none
+				background-color: $bg
+				color: #ffffff
 
 .blog-search
 	margin-top: 30px
